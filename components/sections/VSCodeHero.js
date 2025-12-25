@@ -137,7 +137,7 @@ const VSCodeHero = () => {
             <div className="flex flex-col items-center gap-6 mb-8">
               <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-xl">
                 <Image
-                  src="/assets/images/pexels-samiro-2041832.jpg"
+                  src="/assets/images/img1.jpeg"
                   alt="Anchal Singh"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -250,7 +250,7 @@ export default function About() {
             {/* Profile Image */}
             <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
               <Image
-                src="/assets/images/pexels-samiro-2041832.jpg"
+                src="/assets/images/img1.jpeg"
                 alt="Anchal Singh"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
