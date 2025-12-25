@@ -1,0 +1,88 @@
+<svg width="1100" height="600" viewBox="0 0 1100 600"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <!-- soft orb glow -->
+    <filter id="orbGlow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- ================= LEFT : FULL LOGO ================= -->
+  <g id="logo">
+
+    <!-- A -->
+    <path d="M185 375 L300 135 L415 375 L360 375 L300 250 L240 375 Z"
+          fill="url(#mainGrad)"/>
+
+    <!-- S -->
+    <path d="M360 235
+             C470 215, 470 305, 355 330
+             C240 355, 270 430, 440 410"
+          fill="none"
+          stroke="url(#mainGrad)"
+          stroke-width="22"
+          stroke-linecap="round"/>
+
+    <!-- 🔵 ORB : UP ↕ DOWN -->
+    <circle cx="300" cy="150" r="8"
+            fill="white" opacity="0.9"
+            filter="url(#orbGlow)">
+      <animate
+        attributeName="cy"
+        values="150;260;150"
+        dur="3s"
+        repeatCount="indefinite"
+        calcMode="spline"
+        keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    </circle>
+
+    <!-- CODE BRACKETS (WHITE) -->
+    <text x="135" y="285" font-size="26"
+          fill="#FFFFFF" font-family="monospace">{</text>
+    <text x="465" y="285" font-size="26"
+          fill="#FFFFFF" font-family="monospace">}</text>
+
+    <!-- </> (WHITE) -->
+    <text x="145" y="320" font-size="20"
+          fill="#FFFFFF" font-family="monospace"
+          font-weight="600">&lt;/&gt;</text>
+
+    <!-- API (WHITE) -->
+    <rect x="420" y="310" width="44" height="22"
+          rx="5" fill="none"
+          stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="432" y="325" font-size="10"
+          fill="#FFFFFF" font-family="monospace">API</text>
+
+  </g>
+
+  <!-- ================= RIGHT : NAME ================= -->
+  <g transform="translate(520,320)">
+    <text x="0" y="0"
+          font-size="72"
+          fill="url(#nameGrad)"
+          font-family="Poppins, Arial, sans-serif"
+          font-weight="600"
+          letter-spacing="5">
+      Anchal Singh
+    </text>
+    <line x1="0" y1="14" x2="460" y2="14"
+          stroke="url(#mainGrad)"
+          stroke-width="3"
+          opacity="0.85"/>
+  </g>
+
+</svg>
