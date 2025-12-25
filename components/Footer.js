@@ -26,12 +26,7 @@ export default function Footer() {
       href: 'mailto:singhaj8130@gmail.com',
       ariaLabel: 'Send email',
     },
-    {
-      name: 'Phone',
-      icon: Phone,
-      href: 'tel:+917417498255',
-      ariaLabel: 'Call phone',
-    },
+   
   ]
 
   return (

@@ -37,13 +37,7 @@ export default function Contact() {
       href: 'mailto:singhaj8130@gmail.com',
       gradient: 'from-blue-500 to-cyan-500',
     },
-    {
-      icon: Phone,
-      label: 'Phone',
-      value: '+91-7417498255',
-      href: 'tel:+917417498255',
-      gradient: 'from-purple-500 to-pink-500',
-    },
+    
     {
       icon: MapPin,
       label: 'Location',
